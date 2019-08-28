@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #ea3e3d;
+    --links-color: #8f8f8f;
+    --dark-color: #000;
+}
+
+body {
+    background: #f1f0f0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+}
+
+main .card {
+    max-width: 350px;
+}
+
+header {
+    margin: 50px auto;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+}
+
+header small {
+    color: #4d4d4d;
+}
+
+.card {
+    position: relative;
+    z-index: 1;
+    min-width: 270px;
+    height: 470px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease 0s;
+}
+
+.card:hover {
+    box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .thumbnail img {
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+
+.card:hover article .description {
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.card .thumbnail {
+    background: var(--dark-color);
+    height: 400px;
+    overflow: hidden;
+}
+
+.card .thumbnail img {
+    display: block;
+    width: 120%;
+    transition: all 0.3s linear 0s;
+}
+
+.card article {
+    position: absolute;
+    bottom: 0;
+    background: var(--primary-color);
+    padding: 30px;
+}
+
+.card article .description {
+    max-height: 0;
+    margin: 0;
+    color: #7e7e7e;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.8em;
+    transition: max-height 0.3s ease;
+}
+
+.card article .category {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--secondary-color);
+    padding: 10px 15px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card article figcaption {
+    padding: 0 0 10px;
+    color: var(--dark-color);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.card article .sub-title {
+    margin: 0;
+    padding: 0 0 20px;
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card article .post-meta {
+    margin: 30px 0 0;
+    color: var(--links-color);
+}
+
+.card article .post-meta .timestamp {
+    margin: 0 16px 0 0;
+}
+
+.card article .post-meta a {
+    color: var(--links-color);
+    text-decoration: none;
+}
+
+.card .thumbnail .date {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    background: var(--secondary-color);
+    width: 55px;
+    height: 55px;
+    padding: 5px 0;
+    border-radius: 100%;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card .thumbnail .date .day {
+    font-size: 18px;
+}
+
+.card .thumbnail .date .month {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.attachment {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    background: var(--primary-color);
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    color: var(--links-color);
+    font-size: 20px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+}
+
+.attachment:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+}
