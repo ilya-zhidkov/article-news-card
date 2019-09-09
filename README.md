@@ -4,7 +4,7 @@ Good looking article news card with some sleek hover effects. Made in vanilla HT
 
 Inspired by: [Andy Tran and Justin Kwak](https://codepen.io/andytran/pen/bdpYBv)
 
-![Article News Card](./assets/images/article-news-card.png)
+![Article News Card](./assets/gifs/article-news-card.gif)
 
 ---
 
