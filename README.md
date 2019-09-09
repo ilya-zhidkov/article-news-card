@@ -2,6 +2,8 @@
 
 Good looking article news card with some sleek hover effects. Made in vanilla HTML &amp; CSS.
 
+Inspired by: [Andy Tran and Justin Kwak](https://codepen.io/andytran/pen/bdpYBv)
+
 ![Article News Card](./assets/images/article-news-card.png)
 
 ---
@@ -15,10 +17,10 @@ Good looking article news card with some sleek hover effects. Made in vanilla HT
 
 ### Use case
 
-- Using plain vanilla HTML & CSS
+- Using plain **vanilla HTML & CSS**
 - Positioning elements with a help of **Flexbox**
 - Including **FontAwesome 5** icon library
-- Improving typography with Google Fonts 
+- Improving typography with **Google Fonts** 
 
 ---
 
